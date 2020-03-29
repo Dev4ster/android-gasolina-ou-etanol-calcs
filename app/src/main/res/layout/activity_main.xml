@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20px"
+    android:background="#333"
+>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20px"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:gravity="bottom"
+             android:text="Valor da Gasolina"
+             android:textStyle="bold"
+             android:paddingRight="20dp"
+             android:textColor="#fff"
+
+
+            />
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:inputType="numberDecimal|numberSigned"
+             android:background="@drawable/rounder"
+             android:id="@+id/txtGasolina"
+             android:padding="3dp"
+             android:paddingLeft="6dp"
+             android:hint="Preencha o valor do litro da gasolina"
+             android:textSize="15dp"
+             />
+
+
+
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:text="Valor do Etanol"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal|numberSigned"
+            android:id="@+id/txtEtanol"
+            android:paddingLeft="6dp"
+            android:hint="Preencha o valor do litro do etanol"
+            android:background="@drawable/rounder"
+            android:padding="3dp"
+            android:textSize="15dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="calcGas"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/padrao"
+        android:scaleType="centerInside"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imgResult"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Desenvolvido por: Victor Menezes - RA: 1692977"
+        android:layout_gravity="bottom"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+
+
+</LinearLayout>
